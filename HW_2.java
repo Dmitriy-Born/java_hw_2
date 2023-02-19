@@ -9,6 +9,7 @@ public class HW_2 {
         char p = '!';
         newStr = str.trim().replaceAll("\s+", " ").
                             replaceAll("\s([А-ЯЁ])", ". $1");
+
         if (newStr.charAt(newStr.length()-1) != p){
             newStr += p;
         }
