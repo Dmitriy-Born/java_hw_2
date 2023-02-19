@@ -7,8 +7,8 @@ public class HW_2 {
     public static String point (String str){
         String newStr = "";
         char p = '!';
-        newStr = str.trim().replaceAll("\s+", " ").
-                            replaceAll("\s([А-ЯЁ])", ". $1");
+        newStr = str.trim().replaceAll("\s+", " ")
+                            .replaceAll("\s([А-ЯЁ])", ". $1");
 
         if (newStr.charAt(newStr.length()-1) != p){
             newStr += p;
